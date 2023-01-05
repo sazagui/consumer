@@ -7,6 +7,12 @@
   <groupId>com.example</groupId>
   <artifactId>consumer1test</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <parent>
+		<groupId>com.example</groupId>
+		<artifactId>parent-project</artifactId>
+		<version>1.0-SNAPSHOT</version>
+		<relativePath>../../../pom.xml</relativePath>
+	</parent>
 
   <name>consumer1test</name>
   <!-- FIXME change it to the project's website -->
