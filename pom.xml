@@ -103,6 +103,7 @@
             <version>2.5.3</version>
             <configuration>
                 <goals>package</goals>
+                <remoteTagging>false</remoteTagging>
                 <tagNameFormat>@{project.version}</tagNameFormat>
             </configuration>
         </plugin>
