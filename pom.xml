@@ -10,7 +10,8 @@
   <parent>
 		<groupId>com.example</groupId>
 		<artifactId>parent-project</artifactId>
-		<version>1.4</version>
+		<version>${revision}</version>
+    <relativePath>../../../pom.xml</relativePath>
 	</parent>
 
   <name>consumer1test</name>
@@ -27,26 +28,10 @@
     </dependency>
   </dependencies>
 
-  <scm>
-      <connection>scm:git:git@github.com:sazagui/consumer.git</connection>
-      <developerConnection>scm:git:git@github.com:sazagui/consumer.git</developerConnection>
-      <url>https://github.com/sazagui/consumer.git</url>
-      <tag>@{project.version}</tag>
-  </scm>
 
   <build>
     <plugins>
-        <plugin>
-            <groupId>com.github.danielflower.mavenplugins</groupId>
-            <artifactId>multi-module-maven-release-plugin</artifactId>
-            <version>3.6.1</version>
-            <configuration>
-                <releaseGoals>
-                    <releaseGoal>install</releaseGoal>
-                </releaseGoals>
-                <privateKey>/Users/anfanesaoussane/.ssh/maven_test</privateKey>
-            </configuration>
-        </plugin>
+        
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-release-plugin</artifactId>
